@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Market</title>
+    <link rel="stylesheet" href="/static/css/style.css"> <!-- Link your CSS -->
+</head>
+<body>
+    <header>
+        <h1>Job Market</h1>
+        <p>Explore job opportunities to grow your virtual economy!</p>
+    </header>
+
+    <section>
+        {% if jobs %}
+        <table>
+    <tr>
+        <th>Job Market ID</th>
+        <th>Job ID</th>
+        <th>Job Type</th>
+        <th>Passengers / Cargo</th> 
+        <th>Departure</th>
+        <th>Destination</th>
+        <th>Reward</th>
+        <th>Status</th>
+        <th>Description</th> <th>Accept</th>>
+    </tr>
+    {% for job in jobs %}
+    <tr>
+        <td>{{ job.job_type }}</td>
+        <td>
+            {% if job.job_type == 'Air Taxi' %}
+            {{ job.passengers }} Passengers
+            {% elif job.job_type == 'Cargo' %}
+            {{ job.cargo_weight }} kg
+            {% endif %}
+        </td>
+        <td>{{ job.departure_airport }}</td>
+        <td>{{ job.destination_airport }}</td>
+        <td>{{ job.reward }}€</td>
+        <td>
+            {% if job.time_limit %}
+            {{ job.time_limit }} Hours
+            {% else %}
+            Flexible
+            {% endif %}
+        </td>
+        <td>{{ job.description }}</td>
+    </tr>
+    {% endfor %}
+</table>
+        {% else %}
+        <p>No jobs are available in the Job Market today. Check back later!</p>
+        {% endif %}
+    </section>
+
+    <footer>
+        <p>© 2025 Your MSFS Web App</p>
+    </footer>
+</body>
+</html>

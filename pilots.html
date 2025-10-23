@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilots Portal</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+</head>
+<body>
+    <h2>Pilots Portal</h2>
+    <div id="pilotPortal">
+        <h3>Create Pilot Profile</h3>
+        <form id="createPilotForm">
+            <label for="pilotName">Name:</label>
+            <input type="text" id="pilotName" name="pilotName" required><br><br>
+            <label for="pilotEmail">Email:</label>
+            <input type="email" id="pilotEmail" name="pilotEmail" required><br><br>
+            <label for="pilotPassword">Password:</label>
+            <input type="password" id="pilotPassword" name="pilotPassword" required><br><br>
+            <button type="button" id="createPilotButton">Create Profile</button>
+        </form>
+        <hr>
+        <h3>Log In</h3>
+        <form id="loginPilotForm">
+            <label for="loginEmail">Email:</label>
+            <input type="email" id="loginEmail" name="loginEmail" required><br><br>
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" name="loginPassword" required><br><br>
+            <button type="button" id="loginPilotButton">Log In</button>
+        </form>
+    </div>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

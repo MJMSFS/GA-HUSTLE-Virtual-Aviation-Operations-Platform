@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avion Express</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <img src="/static/img/Avion Express Logo rect.png" alt="MSFS Logo" class="logo">
+        <h1>Welcome to Avion Express</h1>
+        <nav>
+            <div class="menu">
+                <div class="menu-item">
+                    <button class="expand-btn" onclick="toggleSection('flights')">Flights</button>
+                    <div id="flights" class="submenu" style="display: none;">
+                        <a href="javascript:void(0)" onclick="loadContent('flight-log')">Flight Log</a>
+                        <a href="javascript:void(0)" onclick="loadContent('logbook')">Logbook</a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <button class="expand-btn" onclick="toggleSection('economy')">Economy</button>
+                    <div id="economy" class="submenu" style="display: none;">
+                        <a href="javascript:void(0)" onclick="loadContent('job-market')">Job Market</a>
+                        <a href="javascript:void(0)" onclick="loadContent('operations')">Operations</a>
+                        <a href="javascript:void(0)" onclick="loadContent('fleet')">Fleet</a>
+                        <a href="javascript:void(0)" onclick="loadContent('marketplace')">Marketplace</a> <!-- NEW -->
+                        <a href="javascript:void(0)" onclick="loadContent('ledger')">Ledger</a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <button class="expand-btn" onclick="toggleSection('community')">Community</button>
+                    <div id="community" class="submenu" style="display: none;">
+                        <p>Connect with other pilots and share your adventures.</p>
+                    </div>
+                </div>
+                <div id="pilot-dashboard-profile" class="pilot-dashboard-profile">
+                    <span id="dashboard-pilot-id"></span>
+                    <span id="dashboard-pilot-name"></span>
+                    <span id="dashboard-pilot-rank"></span>
+                    <!-- <span id="dashboard-pilot-email"></span> -->
+                    <span id="dashboard-pilot-hours"></span>
+                    <span id="dashboard-pilot-balance"></span>
+                    <span id="dashboard-pilot-location"></span>
+                    <div id="profile-dropdown">
+                        <button id="logout-btn">Log Out</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="content-container">
+            <p>Select an option from the menu to view content.</p>
+            <div id="used-aircraft-list"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Your MSFS Web App</p>
+    </footer>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
