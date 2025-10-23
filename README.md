@@ -31,3 +31,13 @@ Unlike traditional VA platforms focused on scheduled airline ops, GA Hustle cele
 - 🧠 Decision-making: Choose missions based on aircraft capability, urgency, and reward.
 - 💼 Entrepreneurial spirit: Build your own config-driven aviation folklore.
 This is for sim pilots who enjoy crafting their own aviation journey—one mission, one config tweak, one story at a time
+
+🗺️ Roadmap
+- ✅ Flight log and logbook system
+- ✅ Secure pilot login
+- 🔄 Fleet and ledger polish
+- 🔜 Mission generator with seasonal and regional logic
+- 🔜 Integration with MSFS flight tracking tools
+
+🛫 Built By
+Krystian, config storyteller and sim pilot, inspired by real-world rural aviation, economic realism, and the joy of immersive gameplay rituals.
