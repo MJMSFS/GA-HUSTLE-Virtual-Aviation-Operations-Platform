@@ -8,8 +8,26 @@ pilots.db, index.html.
 Job Market Focus on high-value, urgent, non-scheduled transport missions (e.g., organ transport, corporate shuttle, priority cargo) suitable for piston, turboprop, and light jet aircraft.
 jobs.db, jobmarket.db, job_market.html.
 
+Fleet Manager
+Assign aircraft to jobs, track usage and availability. Needs polishing and fixing to work
+
+Ledger System
+Monitor financial transactions and mission payouts. Needs polishing and fixing to work
+
+
 Technology Core Robust, lightweight web application built with Python (Flask). Uses SQLite for all application data (Pilots, Fleet, Ledger, Jobs) and Bcrypt for secure authentication.
 app.py, script.js, Database setup files.
+- Backend: Python (Flask)
+- Frontend: HTML, CSS, JavaScript
+- Database: SQLite (Pilots, Fleet, Jobs, Ledger)
+- Security: Bcrypt for password hashing
+
 
 Why This Platform is Unique:
-The GA HUSTLE platform avoids large-scale airline simulation, focusing instead on the flexibility, quick decisions, and rewarding challenges of operating smaller aircraft into a diverse range of airports. It's built for pilots who enjoy the freedom and entrepreneurial spirit of flying the virtual skies on their own terms.
+
+🌍 Why GA Hustle Is Different
+Unlike traditional VA platforms focused on scheduled airline ops, GA Hustle celebrates:
+- ✈️ Flexibility: Fly what you want, when you want.
+- 🧠 Decision-making: Choose missions based on aircraft capability, urgency, and reward.
+- 💼 Entrepreneurial spirit: Build your own config-driven aviation folklore.
+This is for sim pilots who enjoy crafting their own aviation journey—one mission, one config tweak, one story at a time
